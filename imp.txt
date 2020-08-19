@@ -14,8 +14,10 @@ $(document).ready(function() {
   });
 });
 
-
+https://stackoverflow.com/questions/10398783/jquery-serialize-form-and-other-parameters
 you can serialize data like this and want to add another parameter then add following like this.
 
 header("Access-Control-Allow-Origin: *");----------------put in your controller
 allow third party url like this.
+
+
