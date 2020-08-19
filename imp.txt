@@ -1,0 +1,18 @@
+$(document).ready(function() {
+  $('body').on('click', '#add_to_trial', function () {
+       var productId = meta.product.id;
+    	 var action_url = 'https://ffp.stellar-soft.com/api/addcart';
+    	 $.ajax({
+           		type: "POST",
+                url: action_url,
+                dataType: "json",
+           		data: $("#product_form_"+ productId).serialize() + "&product_id="+productId,
+           		success: function(data) {
+                  console.log(data);
+                }
+         });
+  });
+});
+
+
+you can serialize data like this and want to add another parameter then add following like this.
